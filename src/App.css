@@ -1,0 +1,247 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --button-bg-color: #121212;
+  --button-text-color: #fff;
+  --todo-text-color: rgb(14, 14, 14);
+  --todo-checked-text-color: rgb(100, 100, 100);
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --button-bg-color: rgb(226, 226, 226);
+  --button-text-color: #000;
+  --todo-text-color: #fff;
+  --todo-checked-text-color: rgb(175, 174, 174);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 50;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  color: #ff7b00;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.App {
+  height: 100%;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.darkButton {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 0.9rem;
+  height: 2rem;
+  width: 7rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  margin-top: 10px;
+  margin-right: 40px;
+  position:absolute;
+  top: 10px;
+  right:0;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+/* login sayfası */
+
+.username_login {
+  font-size: 2rem;
+  font-weight: 50;
+  margin: 1rem 0 1rem;
+  text-align: center;
+  color: rgb(19, 121, 168);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input_login_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.input_login{
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  width: 14rem;
+  outline: none; 
+  border: none;
+  background-color: rgb(240, 239, 239);
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login_button {
+  height: 2.5rem;
+  width: 14rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 0.156rem;
+  cursor: pointer;
+  background-color: rgb(19, 121, 168);
+  color: rgb(255,255,255);
+}
+
+.login_button:hover {
+  opacity: 0.9;
+}
+
+/* login sayfası bitiş */
+
+.username {
+  font-size: 2rem;
+  font-weight: 50;
+  margin: 1rem 0 1rem;
+  text-align: center;
+  color: #00b9d1;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.username span {
+  color: #cc00ff;
+}
+
+.styling {
+  font-weight: 800;
+  color: rgb(255, 0, 149);
+}
+
+.input_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input_div .input{
+  padding: 0.5rem 1rem;
+  height: 3.125rem;
+  width: 26.526rem;
+  outline: none;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  font-size: 1.25rem;
+  margin: 0.25rem;
+  border-radius: 1.56rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.item{
+  padding: 0.3rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 4px solid rgb(92, 92, 92);
+}
+
+.item_input{
+  background: none;
+  outline: none;
+  color: var(--todo-text-color);
+  border: none;
+  width: 21.875rem;
+  font-size: 1.1rem;
+}
+
+.item_input_checked {
+  background: none;
+  outline: none;
+  color: var(--todo-checked-text-color);
+  border: none;
+  width: 21.875rem;
+  font-size: 1.1rem;
+  text-decoration: line-through;
+}
+
+.item_edit_input {
+  background-color: rgb(238, 238, 238);
+  outline: solid rgb(212, 211, 211) 1.5px;
+  color: rgb(14, 14, 14);
+  border: none;
+  border-radius: 0.2rem;
+  width: 21.875rem;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+
+.checkbox {
+  font-size: 1.4rem;
+  margin: 0 0.25rem;
+  font-family: 'Hind Siliguri', sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  color: #32cd32;
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  opacity: 0.7;
+}
+
+.editButton{
+  font-size: 1.4rem;
+  margin: 0 0.25rem;
+  font-family: 'Hind Siliguri', sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(1, 131, 253);
+  cursor: pointer;
+}
+
+.editButton:hover{
+  opacity: 0.7;
+}
+
+.removeButton{
+  font-size: 1.4rem;
+  margin: 0 0.25rem;
+  font-family: 'Hind Siliguri', sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(255, 5, 5);
+  cursor: pointer;
+}
+
+.removeButton:hover{
+  opacity: 0.7;
+  
+}
